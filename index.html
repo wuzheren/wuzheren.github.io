@@ -194,7 +194,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-11-19 11:24:41 / 修改时间：11:29:29" itemprop="dateCreated datePublished" datetime="2021-11-19T11:24:41+08:00">2021-11-19</time>
+      <time title="创建时间：2021-11-19 11:24:41 / 修改时间：20:26:18" itemprop="dateCreated datePublished" datetime="2021-11-19T11:24:41+08:00">2021-11-19</time>
     </span>
 
   
@@ -233,7 +233,7 @@
 <p>任意时刻与用户交互的界面只有一个，而某一时刻在栈顶的也只有一个，当这个activity被销毁或有一个新的activity被创建才会改变，所以使用栈这个数据结构。</p>
 <p>Android为我们定义了四种加载模式，分别是standard、singleTop、singleTask和singleInstance。</p>
 <p>Activity的加载模式可以在配置文件AndroidManifest.xml中进行配置，配置项为 android:launchMode具体如下图所示：</p>
-<p><img src="file:///C:\Users\14942\AppData\Local\Temp\ksohtml\wps8058.tmp.jpg" alt="img"> </p>
+<p><img src="https://raw.githubusercontent.com/wuzheren/images/main/img/202111192024408.png" alt="image-20211119202400344"></p>
 <p>standard 默认模式，可以不用写配置。在这个模式下，都会默认创建一个新的实例。因此，在这种模式下，可以有多个 相同的实例，也允许多个相同Activity叠加。 例如：若我有一个Activity名为A1, 上面有一个按钮可跳转到A1。那么如果我点击按钮，便会新创一个Activity A1叠在刚才的A1上（可在同一个任务栈中存在多个相同activity），再点击，又会再新创一个在它上……点back键会依照栈顸序依次退出。</p>
 <p>singleTop可以有多个实例，但是不允许多个相同Activity叠加。如果在任务的栈顶正好存在该Activity的实例， 就重用该实例，否者就会创建新的实例并放入栈顶(即使栈中已经存在该Activity实例，只要不在栈顶，都会创建实例)。</p>
 <p>singleTask（一个任务栈中只允许存在一个自己不会有重复）不允许有多个相同实例。（猜的本身应用程序）中启动的时候如果在栈中已经有该Activity的实例，就重用该实例(会调用实例的onNewIntent())。重用时，会让该实例回到栈顶，因此在它上面的实例将会被移出栈。如果栈中不存在该实例，将会创建新的实例放入栈中。 </p>
