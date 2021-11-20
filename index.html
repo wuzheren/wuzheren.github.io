@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"wuzheren.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"wuzheren.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="sbwy">
 <meta property="og:url" content="http://wuzheren.github.io/index.html">
@@ -72,6 +72,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -82,12 +83,38 @@
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">2</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">3</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
         
@@ -125,7 +152,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -169,6 +196,111 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://wuzheren.github.io/2021/11/20/react/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wuzheren">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="sbwy">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/11/20/react/" class="post-title-link" itemprop="url">react</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-11-20 10:02:17 / 修改时间：20:52:08" itemprop="dateCreated datePublished" datetime="2021-11-20T10:02:17+08:00">2021-11-20</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>851</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><strong>react是将数据渲染为HTML视图的开源JS工具。</strong></p>
+<p>react的优势：原生js或jq操作的是真实的DOM（Document Object Model,文档对象模型，可指html模型中的对象），操作频繁且无法复用。而react是操作虚拟DOM，且有着优秀的diffing（different）算法，易于比较出有差异的一部分、复用真实DOM、最小化页面重绘。</p>
+<p>主要先分2步，创建虚拟DOM。然后把虚拟DOM渲染到页面(其实就是虚拟DOM被react最终转换为真实DOM显示上页面)</p>
+<p><code>js</code></p>
+<pre><code>    &lt;script type=&quot;text/babel&quot;&gt;//说明用的语言不是js是jsx并且使用babel翻译
+    //1.创建虚拟DOM
+    const VDOM = (
+    &lt;h1&gt;hello,react&lt;/h1&gt;
+    )
+    //2.渲染虚拟DOM到页面上
+    ReactDOM.render(VDOM,document.getElementById(&#39;test&#39;))
+    &lt;/script&gt;
+</code></pre>
+<p>虚拟DOM创建2种书写方式。js或者jsx。但jsx其实就是js（创建DOM太繁琐）的语法糖，就是比js创建方式更加便捷的方式，底层还是用了js创建。</p>
+<h4 id="jsx的语法："><a href="#jsx的语法：" class="headerlink" title="jsx的语法："></a>jsx的语法：</h4><p>1.定义虚拟DOM时，不要写引号。</p>
+<p>2.标签中混入js表达式时要用{}。</p>
+<p>3.样式类名的指定不要用class，应该使用className。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% raw %&#125;4.内联样式，要用style=&#123;&#123;key:value,key:value&#125;&#125;形式，value可以是字符串或对象。&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>5.虚拟DOM只能有一个根标签，想写多个只能是用个div啥的包起来。</p>
+<p>6.标签必须闭合。</p>
+<p>7.标签首字母</p>
+<p>​            （1）.若小写字母开头，则将该标签转为html同名元素，若html中无该标签对应同名元素则报错。</p>
+<p>​             （2）.若大写字母开头，react就去渲染对应的组件，若组件没定义则报错。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://wuzheren.github.io/2021/11/19/android/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -192,10 +324,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-11-19 11:24:41 / 修改时间：20:26:18" itemprop="dateCreated datePublished" datetime="2021-11-19T11:24:41+08:00">2021-11-19</time>
+      <time title="创建时间：2021-11-19 11:24:41" itemprop="dateCreated datePublished" datetime="2021-11-19T11:24:41+08:00">2021-11-19</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-11-20 09:33:24" itemprop="dateModified" datetime="2021-11-20T09:33:24+08:00">2021-11-20</time>
+      </span>
 
   
     <span class="post-meta-break"></span>
@@ -204,14 +342,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.8k</span>
+      <span>14k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
+      <span>12 分钟</span>
     </span>
 </div>
 
@@ -224,22 +362,218 @@
     <div class="post-body" itemprop="articleBody">
           <h4 id="Activity简介："><a href="#Activity简介：" class="headerlink" title="Activity简介："></a>Activity简介：</h4><p>通俗来讲是个用户界面，通常一个应用有多个activity，activity的使用会在manifest中申明，且android中是用任务栈（任务栈是一个Android应用中所有Activity的集合）来管理activity，启动时压栈退出时弹出。</p>
 <p>当点击home键时，当前任务栈转到后台，用户可启动任意应用则此应用的任务栈处前台。</p>
-<h4 id="Service简介："><a href="#Service简介：" class="headerlink" title="Service简介："></a>Service简介：</h4><p>Service（不能理解为系统调用，service实际就是在后台默默运行的功能 例如百度云的上传下载）不直接与用户交互没有界面，但比activity有着更高的优先级可以长期存在在后台且内存紧张时不易被终止。Service不仅可以实现后台功能还用于实现进程间通信。使用时和activity一样需要在manifest中申明。</p>
+<h4 id="Service简介："><a href="#Service简介：" class="headerlink" title="Service简介："></a>Service简介：</h4><p>Service（不能理解为系统调用，service实际就是在后台默默运行的功能 例如百度云的上传下载）不直接与用户交互没有界面，但比activity有着更高的优先级可以长期存在在后台且内存紧张时不易被终止。**<u>Service不仅可以实现后台功能还用于实现进程间通信。**</u>使用时和activity一样需要在manifest中申明。</p>
 <h4 id="BroadCastReceiver简介："><a href="#BroadCastReceiver简介：" class="headerlink" title="BroadCastReceiver简介："></a>BroadCastReceiver简介：</h4><p>猜：就是有广播发送者和接收者吧。常驻就是一直监听，非常驻则与应用程序生命周期相关。</p>
 <h4 id="ContentProvider简介："><a href="#ContentProvider简介：" class="headerlink" title="ContentProvider简介："></a>ContentProvider简介：</h4><p>内容提供器可支持在多个应用中存储和读取数据，这也是跨应用共享数据的唯一方式。在Android系统中，没有一个公共的内存区域来给各应用共享数据，而是提供了一些主要类型的contentprovider。</p>
 <p>猜：就是各应用可通过创建Contentprovider存储自己的数据，别的应用也可以通过使用这个类来获取数据。</p>
 <p>在安卓中所有组件都有自己的生命周期从创建到销毁。在这一过程中，组件会在活动、非活动以及可见或不可见等状态中不断因应用场景的改变而进行切换。</p>
-<h3 id="Activity："><a href="#Activity：" class="headerlink" title="Activity："></a>Activity：</h3><p>Android针对Activity的管理使用的是栈机制，Activity栈保存了已经启动并且没有 终止的Activity，并遵循“先进后出”的原则。</p>
+<h2 id="Activity："><a href="#Activity：" class="headerlink" title="Activity："></a>Activity：</h2><p>Android针对Activity的管理使用的是栈机制，Activity栈保存了已经启动并且没有 终止的Activity，并遵循“先进后出”的原则。</p>
 <p>任意时刻与用户交互的界面只有一个，而某一时刻在栈顶的也只有一个，当这个activity被销毁或有一个新的activity被创建才会改变，所以使用栈这个数据结构。</p>
 <p>Android为我们定义了四种加载模式，分别是standard、singleTop、singleTask和singleInstance。</p>
 <p>Activity的加载模式可以在配置文件AndroidManifest.xml中进行配置，配置项为 android:launchMode具体如下图所示：</p>
-<p><img src="https://raw.githubusercontent.com/wuzheren/images/main/img/202111192024408.png" alt="image-20211119202400344"></p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111192054032.png" alt="image-20211119205418964"></p>
 <p>standard 默认模式，可以不用写配置。在这个模式下，都会默认创建一个新的实例。因此，在这种模式下，可以有多个 相同的实例，也允许多个相同Activity叠加。 例如：若我有一个Activity名为A1, 上面有一个按钮可跳转到A1。那么如果我点击按钮，便会新创一个Activity A1叠在刚才的A1上（可在同一个任务栈中存在多个相同activity），再点击，又会再新创一个在它上……点back键会依照栈顸序依次退出。</p>
 <p>singleTop可以有多个实例，但是不允许多个相同Activity叠加。如果在任务的栈顶正好存在该Activity的实例， 就重用该实例，否者就会创建新的实例并放入栈顶(即使栈中已经存在该Activity实例，只要不在栈顶，都会创建实例)。</p>
 <p>singleTask（一个任务栈中只允许存在一个自己不会有重复）不允许有多个相同实例。（猜的本身应用程序）中启动的时候如果在栈中已经有该Activity的实例，就重用该实例(会调用实例的onNewIntent())。重用时，会让该实例回到栈顶，因此在它上面的实例将会被移出栈。如果栈中不存在该实例，将会创建新的实例放入栈中。 </p>
 <p>别的应用程序打开C2（singleTask的activity）时会新启动一个task。如别的应用Other中有一个activity，taskId为200，从它打开 C2，则C2的taskIdI不会为200，例如C2的taskId为201，那么再从C2打开C1、C3，则C2、C3的taskId仍为 201。</p>
 <p>singleInstance（一个任务栈中只允许存在一个activity就是自己）一个实例activity一个task，这个task只有这个实例，不允许有别的Activity存在。</p>
 <p>（关于在一个应用打开另一个应用的activity遵循的基本原则就是，另一个应用的activity 应该放在另一个任务栈中，遵循此原则的条件下再去遵守singleInstance还是singleTask。）</p>
+<p>Activity生命周期</p>
+<p>是指Activity从创建到销毁的过程，在这一过程中，Activity一般处于4种状态，即： Active/Running、Paused、Stop、Killed </p>
+<p>（1）Active/Running 此时Activity一定处于屏幕的最前端，用户完全可以看得到，并且可以与用户进行交互。对于Activity栈来说，它处于栈顶； </p>
+<p>（2）Paused 此时Activity在屏幕上仍然可见，但是它已经失去了焦点（一个活动被另一个非全屏的活动所覆盖（比如一个Dialog）），用户不能与之进行交互。暂停状态的Activity是存活的，它仍然维持着其内部状态信息，但是系统可能会在手机内存极低的情况下杀掉该Activity； </p>
+<p>（3）Stop （放到后台）此时Activity在屏幕上完全不能被用户看见，也就是说这个Activity已经完全被其他Activity 所遮住。处于停止状态的Activity，系统仍然保留有其内部状态和成员信息，但是它经常会由于手机系统 内存被征用而被系统杀死回收； </p>
+<p>（4）Killed Activity被系统杀死回收或者未启动。</p>
+<p>回调函数：</p>
+<p>使用者自己定义一个函数，函数的程序内容自己实现，然后把这个函数的入口地址传给别的（系统的）函数。由别的（系统的）函数运行时来调用。</p>
+<p>Activity生命周期的回调函数（所有的Activity生命周期方法的实现都必项先调用其父类的方法。例如：public void onPause()</p>
+<p>{ super.onPause();</p>
+<p> . . . </p>
+<p>} </p>
+<p>）：</p>
+<p>void onCreate(Bundle savedInstanceState) //所有activity必须实现，用于做一下初始化工作。在Activity第一次被创建的时候调用。可在此处做初始化设置──创建视 图、绑定数据至列表等。如果曾经有状态记录，则调用此方法时会传入一个 表示Activity以前状态的包对象做为参数（就是浏览器可选择恢复原页面）。</p>
+<p>void onStart()  </p>
+<p>void onRestart() </p>
+<p>void onResume() </p>
+<p>void onPause() //当系统将要启动另一个Activity活着弹出对话框时调用。此方法主要用于将所有持久性数据写入存储中，这一切动作应该在短时间内完成，因为 下一个Activity必须等到此方法返回后才会继续。onstop则可以等下一个activity resume后在来完成。</p>
+<p>void onStop() //当Activity不再为用户可见时调用此方法。这可能发生在它被销毁戒者 另一个Activity（可能是现存的或者是新的）转到运行状态并覆盖它时。</p>
+<p>void onDestroy() //在Activity销毁前调用，这可能发生在Activity结束（调用了它的 finish() 方法）或者因为系统需要临时空间而销毁杀死该Activity实例时。可以用 isFinishing()方法来区分这两种情况。</p>
+<p>Android生命周期可分为全生命周期（从creat到destroy 活着）、可视生命周期（从start到stop  可被看见）、前台生命周期 （从resume到pause 可与用户交互）</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200912544.jpg" alt="img">注意pause可以直接resume但stop得先restart再start。</p>
+<p>还有两个方法不属于生命周期方法不总是会被调用。</p>
+<p>onSaveInstanceState()//Android系统在资源不足而终止Activity前被调用（有时认为按home键stop前也会使用，或者有时也直接用在pause和stop两个回调函数之间），用以保存Activity的状态信息，供onCreate()和 onRestoreInstanceState()方法恢复使用。</p>
+<p>onRestoreInstanceState()//恢复onSaveInstanceState()保存的Activity状态信息，在onStart()和onResume()方法间使用。</p>
+<p>还需注意：activity之间切换时无论就是暂停还是停止或者销毁，都是上一个activity先执行到onPause（）就直接先让下一个activity开始create到resume显示到前端，然后才在后端接着处理之前pause的activity是否需要stop还是要destroy。（onSaveInstanceState()方法有时也会直接在pause和stop方法之间被使用）</p>
+<h2 id="Fragment："><a href="#Fragment：" class="headerlink" title="Fragment："></a>Fragment：</h2><p>Fragemnt的出现就是因为屏幕变大（例如平板出现</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200922756.png" alt="image-20211120092218693">2个不同活动界面手机需要2个activity显示但平板要显示在一个activity上)，设计者想尽可能利用当前页面显示更多信息所以将一个activity界面又分为多个有生命周期回调函数的fragment。Fragment像是个小activity子activity，也有生命周期需要依附于activity存在所以其生命周期会受所依附的activity生命周期的影响。一个activity里可以有多个fragment，一个fragment也可以用于多个activity。</p>
+<p>Fragment生命周期回调函数：</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200914581.jpg" alt="img">create前先绑定，destroy后再解绑</p>
+<p>onAttach(Activity) //当Fragment与Activity发生关联时调用。从该方法开始，就可以通过 Fragment.getActivity方法获取与Fragment关联的窗口对象了，但在该方法中仍然无法操作Fragment中的控 件。</p>
+<p>onCreateView(LayoutInflater, ViewGroup, Bundle)//创建该Fragment的视图。 </p>
+<p>onActivityCreated(Bundle)//当Activity的onCreate方法返回时调用。 </p>
+<p>onDestoryView()//与onCreateView相对应，当该Fragment的视图被移除时调用。 </p>
+<p>onDetach()//与onAttach相对应，当Fragment与Activity关联被取消时调用</p>
+<p>静态使用fragment：</p>
+<p>直接新建fragment文件（继承fragment必须至少重写有oncreate和onCreateView），调整对应layout。然后在activity的layoutxml文件内添加fragment组件并在其android:name项指定哪个fragment即可。</p>
+<p>动态使用fragment：</p>
+<p>这个才是fragment的强大之处，先把mainactivity的layoutxml文件中的fragment引用去掉，只留下最外层linearlayout层，并对此layout添加id。然后可以在activity.java文件内用java代码直接对此layout动态添加或替换成Fragment.</p>
+<p>Mainactivity.java:</p>
+<p>@Override<br>protected void onCreate(Bundle savedInstanceState) {<br>  super.onCreate(savedInstanceState);<br>  setContentView(R.layout.activity_main);<br>  Display display = getWindowManager().getDefaultDisplay();//获得屏幕显示<br>  if(display.getWidth()&gt;display.getHeight())<br>  {</p>
+<p>​    getFragmentManager().beginTransaction().replace(R.id.main_layout,new  Fragment1()).commit();<br>  }else {</p>
+<p>​    getFragmentManager().beginTransaction().replace(R.id.main_layout,new Fragment2()).commit();<br>  }<br>}</p>
+<p>报错Fragment1无法转换为Fragment：明明已经extends了，这种一般就是版本错误，方法内所需的fragment的版本和你继承的不同（看报错信息更改Fragment1所继承的版本即可）。</p>
+<p>Fragment之间通信：</p>
+<p>Fragment和Fragment之间的 通讯的桥梁就是这个FragmentManager这个类，这个类是用来管理所有的这个Fragment的，所以可以 找到任何一个所需要的Fragment类。</p>
+<p>实际操作来说的话应该是在一个fragment中使用getActivity获得当前运行的上下文环境再.findViewById获得同一个Activity下不同Fragment内的组件信息。</p>
+<p>例如：在fragment2内使用：</p>
+<p>TextView textView = (TextView)getActivity().findViewById(R.id.f1textView);获取fragment1的textview。</p>
+<h2 id="Intent："><a href="#Intent：" class="headerlink" title="Intent："></a>Intent：</h2><p>Intent是一个动作的完整描述，包含了产生组件、接收组件和传递数据信息。Android中提供了Intent机制来协助应用间的交互与通讯。Intent不仅可用于应用程序之间，也可用于应用程序内部 的 Activity / Service之间的交互。因此，意义：专门提供组件互相调用的相关信息，实现调用者与被调用者之间的解耦。</p>
+<p>Intent由动作、数据、分类、类型、组件和扩展信息等内容组成</p>
+<p>Action属性用于描述Intent要完成的动作：</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200923256.png" alt="image-20211120092301203"> </p>
+<p>Data属性是执行动作的URI和MIME类型（执行的目标对象）</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200923765.png" alt="image-20211120092314711"> </p>
+<p>Action和data一般匹配使用（这两个属性是最重要的）：</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200923556.png" alt="image-20211120092327507"> </p>
+<p>Category属性指明一个执行Action的分类（。例如 LAUNCHER_CATEGORY 表示Intent 的接受者应该在Launcher中作为顶级应用出现；而ALTERNATIVE_CATEGORY表示当前的Intent是一系列的可选动作中的一个，这些动作可以在同一块数据上执行。）：</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200923900.png" alt="image-20211120092338853"> </p>
+<p>Component属性用于指明Intent目标组件的类名称</p>
+<p>通常（隐式）intent是根据Intent中包含的其他属性的信息，比如Action、Data/Type、Category进行查找，最终找到一个与之匹配的目标组件。但是，如果指定了Component这个属性（显式），Intent则会 直接根据组件名查找到相应的组件，而不再执行上述查找过程。指定Component属性后， Intent的其他属性都是可选的。</p>
+<p>Extra属性用于添加一些附加信息：例如发送一个邮件，就可以通过Extra属性来添加主题 （subject）和内容（body）。这边putExtra（）一些信息就可以被在那边用getExtra（）取出。</p>
+<p>根据Intent寻找目标组件时所采用的方式不同，可以将Intent分为两类：直接Intent和间接 Intent。又称为显式Intent与隐式Intent 。</p>
+<p>显式intent：</p>
+<p>一般就是已知组件名<img src="https://gitee.com/jjlldjm/images/raw/master/202111200919957.jpg" alt="img">直接传递到构造函数或者用set方法设置。</p>
+<p>隐式intent（一般选择此方式，其实就有点想打开一个视频文件时你想用哪个应用打开，这些应用就像是一堆匹配隐式intent要求的activity组件）：</p>
+<p>隐式Intent，不指定具体的组件，但是它会声明将要执行的操作，从而匹配到相应的组件。这种方式通过Intent Filter过滤实现，过滤时通常根据Action、Data和Category属性进行匹配查找。 Android提供了两种生成Intent Filter的方式：一种是通过IntentFilter类生成；另一种通过在配置文件 AndroidManifest.xml中定义元素生成。</p>
+<p>匹配原则：</p>
+<p><intent-filter>标签中常用<action>、<data>和<category>这些子元素（其实就是表明所处的activity的属性或是能力，如果和程序中所需intent目标组件匹配则可以将其使用）</p>
+<p>其中<action>属性不能为空，否则所有的Intent都会因匹配失败而被阻塞。</p>
+<p>当发送一个隐式Intent后，系统会将它与设备中的每一个组件的过滤器进行匹配，匹配属性有Action、 Category、Data三个需要这三个属性都匹配成功过滤器中有多个则需大于等于才能唤起相应的组件。</p>
+<p>过滤器中有多个action项时，隐式Intent中的Action属性，与组件中的某一个过滤器的Action能够匹配（如果一个过滤器声明了多个 Action属性，只需要匹配其中一个就行，就已经说明能满足要求了），那么就算是匹配成功.</p>
+<p>过滤器中有多个category项时，过滤器的Category属性内容必须是大于或者等于隐式Intent的Category属性时候，隐 式Intent才能匹配成功。如果一个隐式Intent没有设置Category属性，那么它可以通过任何一个过滤器 的Category匹配。</p>
+<p>过滤器中有多个data项时，用于指定组件可以执行的数据。每个Data属性都可以指定数据的URI结构（数据地址）和数据MIME类型（数据类型）。</p>
+<p>Data匹配时候，MIME类型和URI两者都会进行匹配，匹配规则如下：</p>
+<p>如果过滤器未声明URI和MIME类型，则只有不含URI和MIME类型的隐形Intent才能 匹配成功</p>
+<p>如果过滤器中声明URI但是未声明MIME类型（也不能从URI中分析出MIME类型）， 则只有URI与过滤器URI相同且不包含MIME类型的隐式Intent才能匹配成功 </p>
+<p>如果过滤器声明MIME类型但是未声明URI，只有包含相同MIME类型但是不包含URI 的隐式Intent才能匹配成功 </p>
+<p>如果过滤器声明了URI和MIME类型（既可以是直接设置，也可以是从URI分析出来） ，只有包含相同的URI和MIME类型的隐式Intent才能匹配成功</p>
+<p>总结一下就是：基本隐式intent和intentfilter的这URI和MIME两个属性无论可知未知哪个都必须一模一样。</p>
+<p>URI匹配原则：</p>
+<p>Uri基本结构：</p>
+<p>[scheme:][//authority][path][?query][#fragment]  authority还可以细分为host和port</p>
+<p>[scheme:][//host:port][path][?query][#fragment] </p>
+<p>在URI中，每个组成部分都是可选的，但是有线性的依赖关系 ①如果没有scheme部分，那么host部分会被忽略 ②如果没有host部分，那么port部分会被忽略 ③如果host部分和port部分都没有，那么path部分会被忽略 当进行URI匹配时候，并不是比较全部，而是局部对比，以下是URI匹配规则。 ①如果一个URI仅声明了scheme部分，那么所有拥有与其相同的scheme的URI都会通过 匹配，其他部分不做匹配 ②如果一个URI声明了scheme部分和authority部分，那么拥有与其相同scheme和 authority的URI才能匹配成功，path部分不做匹配 ③如果一个URI所有的部分都声明了，那么只有所有部分都相同的URI才能匹配成功</p>
+<p>实例：<img src="https://gitee.com/jjlldjm/images/raw/master/202111200924466.png" alt="image-20211120092401413"></p>
+<p>在Android世界的四大组件Activity、BroadcastReceiver、Service、Content Provider中，前三个都是 通过Intent来解析进行跳转的，Intent可以说是连接这四大组件的重要桥梁。</p>
+<p>先学习intent实现三种activity跳转：</p>
+<p>不带参跳转：</p>
+<p>Intent intent = new Intent（xxx.this(当前环境activity),xxx.class（目标activity））;</p>
+<p>startActivity(intent);</p>
+<p>带参数跳转：</p>
+<p>其实就是以键值对形式往在startActivity前往intet里面putExtra（键，值） </p>
+<p>目标activity中直接getIntent（）.getExtra（键）。</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200920686.jpg" alt="img"> </p>
+<p>带返回值的跳转：（简单来说就是跳转时的使用startActivityForResult跳转，这样在目标activity就可以使用setResult方法来返回数据，再在本activity使用onActivityResult方法接收传回的数据即可。）</p>
+<p>在跳转的Activity端，调用 startActivityForResult(intent, 1),跳转到 下一个Activity，其中第一个参数为传入的意图对象（里面封装了目的activity类和其余信息），第二个为设置的请求码；</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200920788.jpg" alt="img"> </p>
+<p>跳转到第二个Activity后，调用 setResult(100, intent)方法可返回上一个 Activity，其中第一个参数为结果码，第二 个为传入的意图对象； </p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200924886.jpg" alt="img"> </p>
+<p>在第一个Activity通过onActivityResult()方法获得返回的数据 得先判断是否是自己的那个请求以及请求的结果是否同意：</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200924628.png" alt="image-20211120092447578"></p>
+<h2 id="View类："><a href="#View类：" class="headerlink" title="View类："></a>View类：</h2><p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200929922.png" alt="image-20211120092950878"> </p>
+<p>Android系统给开发者提供了三种设计UI的方式：使用XML文件布局（常用）；使用传统的 代码布局；前两者结合使用。在介绍Android系统提供的5大布局容器和常用控件之前需 弄清两个概念： </p>
+<p>（1）控件：继承于View类型的，可方便完成一些特殊功能的View类型。 </p>
+<p>（2）容器：继承于ViewGroup，是一种比较特殊的View类型或者控件（ViewGroup继 承于View），它存在的作用就是可以以一定的规则展示控件，下文所说的父控件指的就 是容器。只有viewGroup控件才能包含view 例如LinearLayout 里面可以有各种控件。</p>
+<p>几种设计模式（设计模式其实就是大家在做安卓开发中发现的一些套路，根据这些套路才能开发的快和好）</p>
+<p>组合模式，组合模式对单个对象(叶子对象)和组合对象(组合对象)具有一致性，它将对象组织到树结构中， 可以用来描述整体与部分的关系。同时它也模糊了简单元素(叶子对象)和复杂元素(容器对象)的 概念，使得客户能够像处理简单元素一样来处理复杂元素，从而使客户程序能够与复杂元素的 内部结构解耦。</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200930194.png" alt="image-20211120093007150"> </p>
+<p>适配器模式（还是有点不太懂  主要解决两个软件实体间接口不兼容的问题  应该就是用一个适配器类将接口进行转换）</p>
+<p>意图：将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原本由于接口不兼容而不能一起工作的 那些类可以一起工作。 </p>
+<p>主要解决：主要解决在软件系统中，常常要将一些”现存的对象”放到新的环境中，而新环境要求的接口是现对象 不能满足的。 何时使用： 1、系统需要使用现有的类，而此类的接口不符合系统的需要。 2、想要建立一个可以重复使用的类，用于与一些彼此之间没有太大关联的一些类包括一些可能在将来引进的 类一起工作，这些源类不一定有一致的接口。 3、通过接口转换，将一个类插入另一个类系中。</p>
+<p>该模式的主要优点： ① 客户端通过适配器可以透 明地调用目标接口。 ② 复用了现存的类，程序员 不需要修改原有代码而重 用现有的适配者类。 ③ 将目标类和适配者类解耦， 解决了目标类和适配者类 接口不一致的问题。 缺点：过多地使用适配器，会 让系统非常零乱，不易整体进行把握。</p>
+<p>TextView常用的属性：</p>
+<p>• android:id=”@+id/textView1”表示该控件的id，在布局文件中或者代码中被引用 </p>
+<p>• android:textStyle=”bold”表示TextView里面的字加粗显示 </p>
+<p>• android:layout_height=”wrap_content”表示该控件的高度为其包含内容的高度 </p>
+<p>• android:layout_width=”wrap_content”表示该控件的宽度为其包含内容的宽度 </p>
+<p>• android:text=”@string/signin” 显示的内容，这里表示存放在string.xml文件中name=signin 的文本 • android:layout_height=”40dip”设置具体的高度 • android:textColor=”#7089c0”设置文本的颜色 </p>
+<p>• android:textSize=”18sp”设置文本的大小 • android:gravity=”center_vertical”设置文本纵向居中 </p>
+<p>• android:paddingLeft=”5dip”设置内边距 • android:layout_marginTop=”5dip”设置外边距</p>
+<p>EditText属性的大部分设置与TextView是一样的，这里仅介绍EditText与TextView不同的属性: </p>
+<p>• android:hint=”@string/name”表示在为输入之前的提示，当EditText获得输入焦点，并输入文字 时，该文本自动消失，起提示的作用；android:singleLine=”true”表示该文本输入框不可换行输入， 只能在一行内输入文本； </p>
+<p>• android:password=”true”表示该文本输入框是用来输入密码的，输入的文本会自动装换为“·”， 起到隐藏用户密码的作用</p>
+<p>Android中的组件需要用一个int类型的值来表示，即为id</p>
+<p>id属 性只能接受资源类型的值，也就是必须以@开头的值，例如，@id/abc、@+id/xyz等。 p</p>
+<p> <em><strong>*@+id(一般用于添加id)就是在R.java文件里新增一个id名称，如果之前已经存在相同的id名称，那么会覆盖*</strong></em><a href="mailto:之前的名称。而@id则是直接引用R.java文件的存在的id资源，如果不存在，会编译报错"><em><strong>*之前的名称。*</strong></em></a></p>
+<p><em><strong>*@id（一般用于指明那个部件）则是直接引用R.java文件的存在的id资源，如果不存在，会编译报错*</strong></em></p>
+<p>Button与TextView设置一样，区别在于Button可以有按键的效果和事件的监听</p>
+<p>Button的响应方式：</p>
+<p>匿名内部类：</p>
+<p>匿名类是一个表达式，匿名类的语法就类似于调用一个类的构建函数 （new OnClickListener()）， 除此之外，还包含了一个代 码块，在代码块中完成类的定义。</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200929179.jpg" alt="img">先获取，再set监听器，监听器类直接匿名定义并重写其onclick方法即为点击时希望的响应事件。</p>
+<p>自定义监听类：</p>
+<p>基本没差就是额外定义了一个实现了OnClickListener接口的类，把他传入setOnClickListener方法中。</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200930239.png" alt="image-20211120093041191"> </p>
+<p>由 Activity 实现 OnClickListener 接口：（这个在实际应用中使用的较多，当点击事件较多时可以减少代码量）</p>
+<p>实际上就是Activity实现OnClickListener 接口并重写其onClick方法，在此方法内依据传入的view参数的id判断要执行哪一种点击事件。</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200930459.png" alt="image-20211120093053403"> </p>
+<p>在布局文件中添加 onClick 属性（了解即可不好用容易出错）：</p>
+<p>Xml文件中添加onclick属性对应值为方法名 并在activity中实现此方法</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200929194.jpg" alt="img"> </p>
+<p>ImageView和textview一样，区别在于内容是个图片</p>
+<p>多了个src属性：android:src=”@drawable/icon_refresh”</p>
+<h2 id="5种layout："><a href="#5种layout：" class="headerlink" title="5种layout："></a>5种layout：</h2><p>LinearLayout线性布局（有个小关键点就是linearLayout水平还是垂直都不会自动换行/换列，放满了还接着往屏幕外放无法显示了就。）</p>
+<p>orientation属性：</p>
+<p>VERTICAL 垂直 组件之间只存在上下关系</p>
+<p>HORIZONTAL 水平 组件之间只存在左右关系</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200932251.png" alt="image-20211120093202206"> </p>
+<p>属性：</p>
+<p>android:orientation 设置控件或者容器存放的方式 </p>
+<p>android:id 设置控件id，方便在使用时找到其引用 </p>
+<p>android:layout_width 容器的宽度，该值必须设置 </p>
+<p>android:layout_height 容器的高度，该值必须设置 </p>
+<p>android:layout_weight 该属性针对其内的子控件，存放在LinearLayout中的控件都有这 个属性，用来设置该控件或者容器占父控件或者容器的比例。</p>
+<p>android:background 设置背景 </p>
+<p>android:clickable 是否可以响应点击事件 </p>
+<p>android:orientation 设置子控件放置方向 </p>
+<p>xmlns:android= “<a target="_blank" rel="noopener" href="http://schemas.android.com/apk/res/android&quot;">http://schemas.android.com/apk/res/android&quot;</a> 设置该值表示可以当做一个布局文件，被Android系统解释使用，每个布局 的根布局必须包含该属性，否则，系统将找不到该布局。必须放在最外层开始的的标记中 </p>
+<p>android:paddingLeft 设置该layout的左内边距，该值设置后，位于该layout中的View或者 ViewGroup均在padding的距离内放置，边距内不能放置控件。 </p>
+<p>android:paddingRight 设置该layout的右内边距，同上</p>
+<p>android:paddingTop 设置该layout的上内边距，同android:paddingLeft </p>
+<p>android:paddingBottom 设置该layout的下内边距，同上 </p>
+<p>android:padding 设置该layout的四个方向内边距，同上 </p>
+<p>android:layout_margin 表示外边距，还有与内边距相类似的属性，分别为上，下，左，右外 边距 android:minHeight 表示该Layout的最小高度，layout_height=“wrap_content” </p>
+<p>android:minWidth 表示该Layout的最小宽度，Layout_width=“wrap_content” </p>
+<p>RelativeLayout相对布局</p>
+<p>相对布局，是指利用控件之间的相对位置关系来对布局进行放置。换句话说， 在该容器中的控件与其他任何一个控件或者容器（包括父控件）有相对关系。</p>
+<p>属性：</p>
+<p>android:layout_alignParentTop=”true|false”是否与父控件顶部齐平</p>
+<p>android:layout_alignParentBottom=”true|false” 是否与父控件底部齐平</p>
+<p>android:layout_alignParentLeft=”true|false” 是否与父控件左部齐平</p>
+<p>android:layout_alignParentRight=”true|false” 是否与父控件右部齐平</p>
+<p>android:layout_centerInParent=”true|false” 是否在父控件中间</p>
+<p>android:layout_centerInHorizontal=”true|false” 是否水平方向在父控件的中间</p>
+<p>android:layout_centerInVertical=”true|false” 是否垂直方向在父控件的中间</p>
+<p>android:layout_alignTop=”@id/xxx” 与xxx的顶部平齐xxx（代表控件或者容器的ID，可以 是父控件的ID） </p>
+<p>android:layout_alignBottom=”@id/xxx” 与xxx的底部平齐 </p>
+<p>android:layout_alignLeft=”@id/xxx” 与xxx的左边平齐 </p>
+<p>android:layout_alignRight=”@id/xxx” 与xxx的右边平齐 </p>
+<p>android:layout_above=”@id/xxx” 在xxx的上面，该控件的底部与xxx顶部平齐 </p>
+<p>android:layout_below=”@id/xxx” 在xxx的下面，该控件的顶部与xxx顶部平齐 android:layout_toRightOf=”@id/xxx” 在xxx的右边，该控件的左边与xxx的右边平齐 android:layout_toLeftOf=”@id/xxx” 在xxx的左边，该控件的右边与xxx的左边平齐 </p>
+<p>FrameLayout（了解即可其实是层叠布局）</p>
+<p>帧布局，是指该容器内放置的控件或者容器没有上下左右的关系，只有层叠前后的关系。对于放置前后的关系，在没有设置其他属性之前，默认Android系统采用的是叠放的原则，即后加入节点的层叠在上面。设置属性android：bringToFront=“true|false”将前面放置的控件提到最前面可见。 </p>
+<p>TableLayout（感觉就有点奇怪应该不常用 继承自linearlayout）：</p>
+<p>表格布局  直接往tablelayout里面放部件会直接占满一整行，此时就需要使用tableRow属性将其包裹，则一个tablerow包裹的算是一行。</p>
+<p>一个tablerow里包含太多部件<img src="https://gitee.com/jjlldjm/images/raw/master/202111200931480.jpg" alt="img">一行放不下会直接不显示。</p>
+<p>属性:</p>
+<p>以下属性都是针对所有行的对应列共同的设置，编号从0开始。</p>
+<p>android:stretchColumns=”” 设置可伸展的列（前提是得有剩余空间）（此时列的宽度由所有行中最宽的单元格决定）。该列能够向行方向伸展。最多可占领一整行。 android:stretchColumns=”0” 第0列可伸展 。</p>
+<p>android:shrinkColumns=”” 设置可收缩的列（前提是有组件未显示完全）。android:shrinkColumns=”1,2” 第1,2列皆可 收缩 </p>
+<p>android:collapseColumns=”” 隐藏指定的列，可设置多个值，用逗号隔开“0,2”表示隐藏第1和第 3列。android:collapseColumns=”*” 隐藏全部行</p>
+<p>AbsoluteLayout（很少使用）</p>
+<p>绝对布局，是指以屏幕左上角为坐标原点（0,0），控件在容器中的位置以坐标的形式存在， 可以随意指定控件的坐标位置，非常灵活。在开发过程中很少使用，原因是屏幕兼容性不好，不便控制两个控件之间的位置。其中控件或者容器放置的位置通过android:layout_x和 android:layout_y这两个属性进行设置。</p>
+<p>Res文件夹下如何存放资源文件：</p>
+<p><img src="https://gitee.com/jjlldjm/images/raw/master/202111200932992.png" alt="image-20211120093218942"> </p>
 
       
     </div>
@@ -279,7 +613,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/18/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+          <a href="/2021/11/18/hello-world/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta-container">
@@ -297,7 +631,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-11-19 10:45:01" itemprop="dateModified" datetime="2021-11-19T10:45:01+08:00">2021-11-19</time>
+        <time title="修改时间：2021-11-20 09:09:56" itemprop="dateModified" datetime="2021-11-20T09:09:56+08:00">2021-11-20</time>
       </span>
 
   
@@ -307,7 +641,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>367</span>
+      <span>3</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -325,19 +659,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+          <p>喂喂喂</p>
 
       
     </div>
@@ -378,14 +700,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">2k</span>
+    <span title="站点总字数">14k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">2 分钟</span>
+    <span title="站点阅读时长">13 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -417,6 +739,8 @@
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
